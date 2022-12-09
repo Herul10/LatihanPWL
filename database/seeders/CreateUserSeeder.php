@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class CreateUserSeeder extends Seeder
 {
@@ -17,17 +18,15 @@ class CreateUserSeeder extends Seeder
         [
 
             'name'=>'IsUser',
-            'username'=>'IsUser',
             'email'=>'user@gmail.com',
-            'prssword'=>bcrypt('12345'),
-            'roles_id =>2'
-        ]
+            'password'=>bcrypt('12345'),
+            'roles_id' =>2
+        ],
         [
-            'name'=>'IsUser',
-            'username'=>'IsUser',
-            'email'=>'user@gmail.com',
-            'prssword'=>bcrypt('12345'),
-            'roles_id =>2'
+            'name'=>'IsAdmin',
+            'email'=>'admin@gmail.com',
+            'password'=>bcrypt('12345'),
+            'roles_id' =>1
         ]
         ];
             foreach($user as $key => $value){
