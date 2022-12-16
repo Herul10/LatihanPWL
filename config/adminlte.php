@@ -301,6 +301,8 @@ return [
             'topnav_right' => true,
         ],
 
+
+
         // Sidebar items:
         [
             'type' => 'sidebar-menu-search',
@@ -310,6 +312,12 @@ return [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
+        ],
+        [
+            'text'        => 'pages',
+            'url'         => 'admin/books',
+            'icon'        => 'far fa-fw fa-book',
+            'can'         => 'isAdmin',
         ],
         [
             'text'        => 'pages',
